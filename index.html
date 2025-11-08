@@ -48,7 +48,7 @@
     <main class="">
         <!-- banner -->
          <section class="container mx-auto">
-            <div id="slide1" class="carousel-item relative w-full justify-center items-center">
+            <div id="slide1" class="carousel-item relative w-full justify-center items-center mb-7 md:mb-0">
                 <img
                 src="images/banner.png"
                 class="w-full mt-7" />
@@ -62,15 +62,15 @@
             
             </div>
             <!-- total sold and subscriber info -->
-            <div class="relative top-[-23px] md:top-[-45px] lg:top-[-65px] inter-font flex  md:flex-row gap-6 justify-center ">
-                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
+            <div class="relative  md:top-[-45px] lg:top-[-65px] inter-font flex flex-col md:flex-row gap-6 justify-center ">
+                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl border-2 md:border-0 md:border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
                     <i class="fa-solid fa-users fa-xl md:fa-2x lg:fa-4x" style="color:#1DD100"></i>
                     <div>
                         <h4 class=" font-bold text-xl md:text-3xl lg:text-4xl">500K+</h4>
                         <p class="text-xs md:text-lg text-[#03071299]">Registered users</p>
                     </div>
                 </div>
-                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
+                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl  border-2 md:border-0 md:border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
                     <i class="fa-solid fa-ticket fa-xl md:fa-2x lg:fa-4x" style="color:#1DD100"></i>
 
                     <div>
@@ -78,7 +78,7 @@
                         <p class="text-xs md:text-lg text-[#03071299]">Tickets sold</p>
                     </div>
                 </div>
-                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
+                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl  border-2 md:border-0 md:border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
                     <i class="fa-solid fa-bus fa-xl md:fa-2x lg:fa-4x" style="color:#1DD100"></i>
                     <div>
                         <h4 class=" font-bold text-xl md:text-3xl lg:text-4xl">80K+</h4>
@@ -89,9 +89,9 @@
          </section>
 
          <!-- offers for user -->
-          <section class="container mx-auto">
+          <section class="container mx-auto mb-28">
             <h3 class="raleway-font font-bold text-2xl md:text-3xl lg:text-[40px] text-center mt-14 lg:mt-28 ">Best offers for you</h3>
-            <div class="flex flex-col lg:flex-row mt-12 gap-9 lg:gap-6 ">
+            <div class="flex flex-col lg:flex-row mt-12 gap-9 lg:gap-6 justify-center ">
                 <!-- div left side -->
                  <div class="inter-font bg-[#FFBF0F] flex rounded-3xl md:justify-between">
                     <div class="p-5 md:p-12">
@@ -134,6 +134,75 @@
                 <button class="raleway-font text-xl  font-bold text-[#1DD100] rounded-xl border-2 border-[#1DD100] py-5 px-8 mt-[62px]">See All Offers</button>
             </div>
           </section>
+
+          <!-- bus ticket booking part -->
+           <section class="bg-[#F7F8F8] rounded-t-[40px] border-t-1 border-[#1DD100]">
+                <!-- bus description -->
+                 <div class="container mx-auto">
+                    <div>
+                        <div class="text-center ">
+                            <h4 class="raleway-font font-bold text-[40px] mt-[120px]">P.H Paribahan</h4>
+                            <p class="inter-font text-lg text-[#03071299] mt-6">Yes, you can run unit tests and view the results directly within the app.
+                            The integrated <br>testing features allow for a streamlined .</p>
+                        </div>
+                        <div class="bg-white mt-12 flex flex-col lg:flex-row rounded-3xl justify-between p-8 mb-7">
+                            <div>
+                                <div class="flex gap-12 md:gap-[233px] mb-4 md:mb-6 flex-col md:flex-row">
+                                    <div class="flex gap-4 items-center">
+                                        <i class="fa-solid fa-bus-side fa-4x"></i>
+                                        <div>
+                                            <h4 class="raleway-font text-[32px] font bold">Greenline Paribahan</h4>
+                                            <p class="inter-font text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                        </div>
+                                    </div>
+                                    <button class="p-[17px] btn bg-[#1DD10026] rounded-xl text-[#1DD100]"><i class="fa-solid fa-couch" style="color: #1DD100;"></i> <span>40</span> Seats left</button>
+                                </div>
+                                <div class="bg-[#F7F8F8] rounded-3xl p-8 railway-font font-semibold text-lg flex flex-col gap-6 ">
+                                    <div class="flex justify-between items-center">
+                                        <p class="text-[#03071299]">Route</p>
+                                        <h5>Dhaka - Sylhet</h5>
+                                    </div>
+                                    <div class="border-1 border-dashed text-[#03071233] "></div>
+                                    <div class="flex justify-between items-center">
+                                        <p class="text-[#03071299]">Departure Time</p>
+                                        <h5>9:00 PM</h5>
+                                    </div>
+                                    <div class="border-1 border-dashed text-[#03071233] "></div>
+                                    <div class="text-[#030712CC] inter-font font-medium text-[16px] flex flex-col md:flex-row gap-6 justify-center ">
+                                        <div class="bg-[#0307120D] p-5 rounded-xl">
+                                            <p>Boarding Point - Laxmipur</p>
+                                        </div>
+                                        <div class="bg-[#0307120D] p-5 rounded-xl">
+                                            <p>Dropping Point - Bogura</p>
+                                        </div>
+                                        <div class="bg-[#0307120D] p-5 rounded-xl">
+                                            <p>Est. Time - 11 Hour</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- price per seat-->
+                            <div class=" p-0 lg:bg-[#F7F8F8] lg:border-1 lg:border-[#1DD100] rounded-b-full  lg:w-20 lg:h-[40px] relative top-[-25px] right-[-19px] md:top-[-25px] md:right-[-66px] lg:top-[-33px] lg:right-[-96px]"></div>
+                            <div class="p-0 border-1 border-dashed text-[#1DD100]"></div>
+                            <div class="p-0 lg:bg-[#F7F8F8] lg:border-1 lg:border-[#1DD100] rounded-t-full  lg:w-20 lg:h-[40px] relative bottom-[-161px] left-[-21px] md:bottom-[-169px] md:left-[-66px] lg:bottom-[-376px] lg:left-[-96px]"></div>
+                             <div>
+                                <i class="fa-solid fa-bangladeshi-taka-sign"></i>
+                                <h4>550 Taka</h4>
+                                <p>Per Seat</p>
+                             </div>
+                        </div>
+                        
+                
+                     
+                    </div>
+                    
+                 </div>
+                 <div class="mt-6">
+                    <h1>Hello</h1>
+                 </div>
+
+
+           </section>
     </main>
     <footer class="container mx-auto">
 
