@@ -45,47 +45,95 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto">
+    <main class="">
         <!-- banner -->
-         <section>
+         <section class="container mx-auto">
             <div id="slide1" class="carousel-item relative w-full justify-center items-center">
                 <img
                 src="images/banner.png"
                 class="w-full mt-7" />
                 
                 <div class="absolute text-center justify-center items-center">
-                    <h3 class="raleway-font font-extrabold text-[64px] text-white">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h3>
-                    <p class="inter-font text-lg font-normal max-w-64 md:max-w-[690px] text-white mt-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing 
+                    <h3 class="raleway-font font-extrabold text-xl md:text-[44px] lg:text-[64px] text-white">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h3>
+                    <p class="inter-font text-xs md:text-lg font-normal max-w-[320px] md:max-w-[690px] text-white mt-2 lg:mt-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing 
                         features allow for a streamlined .</p>
-                    <button class="rounded-xl px-7 mt-8 py-5 bg-[#1DD100] text-xl font-bold border-0">Buy Tickets</button>  
+                    <button class="rounded-xl px-1 py-1 md:px-7 mt-4 lg:mt-8 md:py-5 bg-[#1DD100] text-xs md:text-xl font-bold border-0">Buy Tickets</button>  
                 </div>
             
             </div>
-            <div class="relative top-[-65px] inter-font flex gap-6 justify-center ">
-                <div class="flex gap-4 py-8 rounded-3xl border-b-4 border-[#1DD100] px-12 bg-white">
-                    <i class="fa-solid fa-users fa-4x" style="color:#1DD100"></i>
+            <!-- total sold and subscriber info -->
+            <div class="relative top-[-23px] md:top-[-45px] lg:top-[-65px] inter-font flex  md:flex-row gap-6 justify-center ">
+                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
+                    <i class="fa-solid fa-users fa-xl md:fa-2x lg:fa-4x" style="color:#1DD100"></i>
                     <div>
-                        <h4 class=" font-bold text-4xl">500K+</h4>
-                        <p class="text-lg text-[#03071299]">Registered users</p>
+                        <h4 class=" font-bold text-xl md:text-3xl lg:text-4xl">500K+</h4>
+                        <p class="text-xs md:text-lg text-[#03071299]">Registered users</p>
                     </div>
                 </div>
-                <div class="flex gap-4 py-8 rounded-3xl border-b-4 border-[#1DD100] px-12 bg-white">
-                    <i class="fa-solid fa-ticket fa-4x" style="color:#1DD100"></i>
+                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
+                    <i class="fa-solid fa-ticket fa-xl md:fa-2x lg:fa-4x" style="color:#1DD100"></i>
 
                     <div>
-                       <h4 class=" font-bold text-4xl">1.7 lacks</h4>
-                        <p class="text-lg text-[#03071299]">Tickets sold</p>
+                       <h4 class=" font-bold text-xl md:text-3xl lg:text-4xl">1.7 lacks</h4>
+                        <p class="text-xs md:text-lg text-[#03071299]">Tickets sold</p>
                     </div>
                 </div>
-                <div class="flex gap-4 py-8 rounded-3xl border-b-4 border-[#1DD100] px-12 bg-white">
-                    <i class="fa-solid fa-bus fa-4x" style="color:#1DD100"></i>
+                <div class="flex gap-4 px-2 lg:py-8 rounded-3xl border-b-4 border-[#1DD100] md:px-12 bg-white justify-center items-center">
+                    <i class="fa-solid fa-bus fa-xl md:fa-2x lg:fa-4x" style="color:#1DD100"></i>
                     <div>
-                        <h4 class=" font-bold text-4xl">80K+</h4>
-                        <p class="text-lg text-[#03071299]">Rental partners</p>
+                        <h4 class=" font-bold text-xl md:text-3xl lg:text-4xl">80K+</h4>
+                        <p class="text-xs md:text-lg text-[#03071299]">Rental partners</p>
                     </div>
                 </div>
             </div>
          </section>
+
+         <!-- offers for user -->
+          <section class="container mx-auto">
+            <h3 class="raleway-font font-bold text-2xl md:text-3xl lg:text-[40px] text-center mt-14 lg:mt-28 ">Best offers for you</h3>
+            <div class="flex flex-col lg:flex-row mt-12 gap-9 lg:gap-6 ">
+                <!-- div left side -->
+                 <div class="inter-font bg-[#FFBF0F] flex rounded-3xl md:justify-between">
+                    <div class="p-5 md:p-12">
+                        <h4 class=" font-black text-2xl md:text-3xl lg:text-[40px] text-[#030712CC]">15% OFF</h4>
+                        <p class="font-semibold text-lg md:text-xl text-[#030712CC]">on your next purchase</p>
+                        <p class="text-[#03071280] font-medium text-lg">use by January 2024</p>
+                        
+                    </div>
+                    <div class=" p-0  bg-white rounded-full  w-12 h-12 relative top-[-25px] right-[-19px] md:top-[-25px] md:right-[-66px] lg:top-[-25px] lg:right-[-24px]"></div>
+                    <div class="p-0 border-1 border-dashed border-white">
+                    </div>
+                    <div class="p-0 border-white bg-white rounded-full  w-12 h-12 relative bottom-[-161px] left-[-21px] md:bottom-[-169px] md:left-[-66px] lg:bottom-[-178px] lg:left-[-24px]"></div>
+
+                    <div class="p-5 md:py-16 md:px-10">
+                        <h4 class="  text-2xl raleway-font font-bold md:text-3xl lg:text-[32px] text-[#030712]">NEW15</h4>
+                        <p class="text-[#03071266]  text-lg">Coupon Code</p>
+                    </div>
+                </div>
+
+                <!-- div right for more offers -->
+                <div class="inter-font bg-[#F78C9C] flex rounded-3xl md:justify-between">
+                    <div class=" p-5 md:p-12 ">
+                        <h4 class=" font-black text-2xl md:text-3xl lg:text-[40px] text-[#030712CC]">20% OFF</h4>
+                        <p class="font-semibold text-lg md:text-xl text-[#030712CC]">on your next purchase</p>
+                        <p class="text-[#03071280] font-medium text-lg">use by January 2024</p>
+                        
+                    </div>
+                    <div class=" p-0 border-transparent bg-white rounded-full  w-12 h-12 relative top-[-25px] right-[-19px] md:top-[-25px] md:right-[-66px] lg:top-[-25px] lg:right-[-24px]"></div>
+                    <div class="p-0 border-1 border-dashed border-white">
+                    </div>
+                    <div class="p-0 border-white bg-white rounded-full  w-12 h-12 relative bottom-[-161px] left-[-21px] md:bottom-[-169px] md:left-[-66px] lg:bottom-[-178px] lg:left-[-24px]"></div>
+
+                    <div class=" p-5 md:py-16 md:px-7">
+                        <h4 class=" text-2xl raleway-font font-bold md:text-3xl lg:text-[32px] text-[#030712]">Couple 20</h4>
+                        <p class="text-[#03071266]  text-lg">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="raleway-font text-xl  font-bold text-[#1DD100] rounded-xl border-2 border-[#1DD100] py-5 px-8 mt-[62px]">See All Offers</button>
+            </div>
+          </section>
     </main>
     <footer class="container mx-auto">
 
