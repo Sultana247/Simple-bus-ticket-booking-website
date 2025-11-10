@@ -57,7 +57,7 @@
                     <h3 class="raleway-font font-extrabold text-xl md:text-[44px] lg:text-[64px] text-white">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h3>
                     <p class="inter-font text-xs md:text-lg font-normal max-w-[320px] md:max-w-[690px] text-white mt-2 lg:mt-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing 
                         features allow for a streamlined .</p>
-                    <button class="rounded-xl px-1 py-1 md:px-7 mt-4 lg:mt-8 md:py-5 bg-[#1DD100] text-xs md:text-xl font-bold border-0">Buy Tickets</button>  
+                    <button id="buy-ticket-button" onclick="buttonClick()" class="rounded-xl px-1 py-1 md:px-7 mt-4 lg:mt-8 md:py-5 bg-[#1DD100] text-xs md:text-xl font-bold border-0">Buy Tickets</button>  
                 </div>
             
             </div>
@@ -100,6 +100,7 @@
                         <p class="text-[#03071280] font-medium text-lg">use by January 2024</p>
                         
                     </div>
+                    <!-- cupon divider -->
                     <div class=" ">
                         <img src="images/cupon-devider.png" alt="">
                     </div>
@@ -137,10 +138,10 @@
           </section>
 
           <!-- bus ticket booking part -->
-           <section class="bg-[#F7F8F8] rounded-t-[40px] border-t-1 border-[#1DD100]">
+           <section id="" class="bg-[#F7F8F8] rounded-t-[40px] border-t-1 border-[#1DD100]">
                 <!-- bus description -->
                  <div class="container mx-auto">
-                    <div>
+                    <div id="bus-ticket-booking">
                         <div class="text-center ">
                             <h4 class="raleway-font font-bold text-[40px] mt-[120px]">P.H Paribahan</h4>
                             <p class="inter-font text-lg text-[#03071299] mt-6">Yes, you can run unit tests and view the results directly within the app.
@@ -215,7 +216,7 @@
                             <button class="btn bg-[#0307121A] text-[#030712B3] py-3 px-[39px] "><img src="images/wheel.png" alt="" srcset=""></button>
                         </div>
                         <!-- seats -->
-                         <div class="flex gap-2 md:gap-[26px] ">
+                         <div id="" class="flex gap-2 md:gap-[26px] ">
                             <div class="grid grid-cols-1 gap-y-[56px] items-center mt-3">
                                 <p class="text-[#03071280]">A</p>
                                 <p class="text-[#03071280]">B</p>
@@ -228,47 +229,47 @@
                                 <p class="text-[#03071280]">I</p>
                                 <p class="text-[#03071280]">J</p>
                             </div>
-                            <div class="grid  grid-rows-10 grid-cols-4 inter-font font-medium text-lg text-[#03071280] gap-3 md:gap-x-8 md:gap-y-6">
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I4</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J1</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J2</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J3</button>
-                            <button class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J4</button>
+                            <div id="all-seats"  class="grid  grid-rows-10 grid-cols-4 inter-font font-medium text-lg text-[#03071280] gap-3 md:gap-x-8 md:gap-y-6">
+                            <button id="A1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A1</button>
+                            <button id="A2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A2</button>
+                            <button id="A3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A3</button>
+                            <button id="A4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">A4</button>
+                            <button id="B1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B1</button>
+                            <button id="B2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B2</button>
+                            <button id="B3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B3</button>
+                            <button id="B4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">B4</button>
+                            <button id="C1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C1</button>
+                            <button id="C2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C2</button>
+                            <button id="C3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C3</button>
+                            <button id="C4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">C4</button>
+                            <button id="D1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D1</button>
+                            <button id="D2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D2</button>
+                            <button id="D3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D3</button>
+                            <button id="D4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">D4</button>
+                            <button id="E1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E1</button>
+                            <button id="E2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E2</button>
+                            <button id="E3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E3</button>
+                            <button id="E4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">E4</button>
+                            <button id="F1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F1</button>
+                            <button id="F2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F2</button>
+                            <button id="F3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F3</button>
+                            <button id="F4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">F4</button>
+                            <button id="G1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G1</button>
+                            <button id="G2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G2</button>
+                            <button id="G3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G3</button>
+                            <button id="G4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">G4</button>
+                            <button id="H1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H1</button>
+                            <button id="H2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H2</button>
+                            <button id="H3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H3</button>
+                            <button id="H4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">H4</button>
+                            <button id="I1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I1</button>
+                            <button id="I2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I2</button>
+                            <button id="I3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I3</button>
+                            <button id="I4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">I4</button>
+                            <button id="J1"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J1</button>
+                            <button id="J2"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J2</button>
+                            <button id="J3"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J3</button>
+                            <button id="J4"  class="rounded-xl bg-[#F7F8F8] py-[10px] px-[25px] md:py-[17px] md:px-[45px]">J4</button>
                          </div>
                          </div>
                     </div>
@@ -285,33 +286,40 @@
                             <!-- main calculation part -->
                             <div class="bg-[#F7F8F8] rounded-xl p-8 inter-font text-lg flex flex-col gap-2 md:gap-4">
                                 <div class="flex justify-between font-medium ">
-                                    <h4>Seat <span class="bg-[#1DD100] text-white">2</span></h4>
+                                    <h4>Seat <span id="selected-seat-count" class="bg-[#1DD100] text-white">0</span></h4>
                                     <h4>Class</h4>
                                     <h4>Price</h4>
                                 </div>
-                                <div class="border-1 border-dashed text-[#03071233]"></div>
+                                <!-- <div class="border-1 border-dashed text-[#03071233]"></div>
                                 <div class="flex justify-between  text-[#03071299]">
-                                    <p><span>C2</span></p>
+                                    <p><span></span></p>
                                     <p>Economoy</p>
                                     <p>550</p>
+                                </div> -->
+                                <div id="selected-seat-list">
+                                    <div id="selected-seat-display" class="hidden">
+                                        <div  class="border-1 border-dashed text-[#03071233] mt-6"></div>
+                                    
+                                        <div  class="flex justify-between  text-[#03071299] mt-6 mb-6">
+                                            <p><span id="selected-one">C2</span></p>
+                                            <p>Economoy</p>
+                                            <p>550</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex justify-between  text-[#03071299]">
-                                    <p><span>C2</span></p>
-                                    <p>Economoy</p>
-                                    <p>550</p>
-                                </div>
+                                
                                 <div class="border-1 text-[#03071233]"></div>
                                 <div class="flex justify-between font-medium">
                                     <h4>Total Price</h4>
                                     
-                                    <h4>BDT1140</h4>
+                                    <h4>BDT<span id="total-payable">0</span></h4>
                                 </div>
                                 <!-- apply cupon part -->
-                                 <div class="bg-white rounded-xl p-2 md:px-[22px] md:py-[20px] flex flex-col md:flex-row justify-between items-center inter-font">
+                                 <div id="apply-cupon" class="bg-white rounded-xl p-2 md:px-[22px] md:py-[20px] flex flex-col md:flex-row justify-between items-center inter-font">
                                     <div>
-                                        <input class="text-[#03071266] border-0 text-[14px] " type="email" placeholder="Have any copupon?" required />
+                                        <input id="cupon" class="p-2 border-0 text-[14px] " type="text" placeholder="Have any copupon?" required />
                                     </div>
-                                    <button class="bg-[#1DD100] py-3 px-4 rounded-lg text-white text-[16px] font-semibold">Apply</button>
+                                    <button id="apply-cupon-button" class="bg-[#1DD100] py-3 px-4 rounded-lg text-white text-[16px] font-semibold">Apply</button>
                                 </div>
 
                             </div>
@@ -367,5 +375,8 @@
     <footer class="container mx-auto">
 
     </footer>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/buy-tickets.js"></script>
+    <script src="scripts/select-set-and-calculate-price.js"></script>
 </body>
 </html>
