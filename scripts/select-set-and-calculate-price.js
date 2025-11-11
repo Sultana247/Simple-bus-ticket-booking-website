@@ -55,33 +55,40 @@ document.getElementById('all-seats').addEventListener('click', function(event){
         }
 
         // cupon part
-        cupon(count);
+        
        
 });
 
 
 // need to do more work
-function cupon(count){
-     const cuponInput = getelementForSeatByID('cupon');
-     const cuponInputText = cuponInput.innerText;
-        const applyCupon = getelementForSeatByID('apply-cupon');
-        document.getElementById('apply-cupon-button').addEventListener('click', function(){
+function cupon(){
+     const cuponInput = document.getElementById('cupon');
+     console.log(cuponInput);
+
+     const cuponInputText = cuponInput.value;
+     
+     console.log(cuponInputText);
+     console.log(count," seats selected");
+        const applyCupon = document.getElementById('apply-cupon');
+        
         if(cuponInputText === 'NEW15' && count === 4){
             total = total - (total*0.15);
+            console.log(total, 'discount price');
             setElementById('total-payable', total);
             applyCupon.classList.add('hidden');
 
         }
         else if(cuponInputText === 'Couple 20' && count === 2){
             total = total -(total*0.20);
+            console.log(total, 'discount price');
             setElementById('total-payable', total);
             applyCupon.classList.add('hidden');
         }
         else{
             
-            console.log('the cupon is not valid');
+            applyCupon.append('Please apply proper cupon');
         }
-    });
+    
 
 
 }
