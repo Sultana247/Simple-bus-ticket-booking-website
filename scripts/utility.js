@@ -23,3 +23,22 @@ function setElementById(Id, value){
 
 }
 
+function hiddenSectionById(id){
+    const hiddenEvent = document.getElementById(id);
+    hiddenEvent.classList.add('hidden');
+
+}
+function displaySectionById(id){
+    const hiddenEvent = document.getElementById(id);
+    hiddenEvent.classList.remove('hidden');
+    
+}
+
+
+function getTheCurrentValue(id){
+   const countValue =   document.getElementById(id);
+    const countText = countValue.innerText;
+    const countInt = parseInt(countText);
+    
+    
+}

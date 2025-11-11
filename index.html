@@ -301,7 +301,7 @@
                                         <div  class="border-1 border-dashed text-[#03071233] mt-6"></div>
                                     
                                         <div  class="flex justify-between  text-[#03071299] mt-6 mb-6">
-                                            <p><span id="selected-one">C2</span></p>
+                                            <p><span id="selected-one"></span></p>
                                             <p>Economoy</p>
                                             <p>550</p>
                                         </div>
@@ -359,7 +359,7 @@
 
 
                              </div>
-                             <button class="raleway-font font-extrabold text-xl rounded-2xl bg-[#1DD100] text-white py-5 ">Next</button>
+                             <button id="next-button" onclick="successfullyBooked()" class="raleway-font font-extrabold text-xl rounded-2xl bg-[#1DD100] text-white py-5 ">Next</button>
                              <div class="flex text-[#03071299] inter-font text-lg mt-6 justify-center gap-[43px]">
                                 <p class="underline">Terms and Conditions</p>
                                 <p class="underline">Cancellation Policy</p>
@@ -406,7 +406,7 @@
     </footer>
 
     <!--ticket booking succesful section  -->
-    <section id="succesful-section" class="bg-[#F7F8F8] py-60 px-96">
+    <section id="succesful-section" class="bg-[#F7F8F8] py-20 px-14 lg:py-60 lg:px-96 hidden">
         <div class="bg-white rounded-lg py-14 px-20 flex flex-col justify-center text-center gap-9">
             <div class="flex justify-center">
                 <img src="images/success.png" alt="" srcset="" class="w-[100px] h-24 text-center">
@@ -418,8 +418,8 @@
             </p>
             <p class="font-light">Shortly you will find a confirmation in your email.</p>
             </div>
-            <div>
-                <button class="raleway-font font-extrabold text-xl rounded-2xl bg-[#1DD100] text-white py-5 px-11 ">Continue</button>
+            <div class="flex justify-center">
+                <button id="continue-button" onclick="continueButton()" class="raleway-font font-extrabold text-xl rounded-2xl bg-[#1DD100] text-white py-5 px-11 ">Continue</button>
             </div>
             
         </div>
